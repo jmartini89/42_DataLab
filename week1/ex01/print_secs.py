@@ -3,8 +3,8 @@ import sys
 
 
 try:
-    if len(sys.argv) > 4:
-        raise OSError("too many arguments")
+    if len(sys.argv) != 4:
+        raise OSError("wrong number of arguments")
 
     print(sum(int(element) * 60 ** idx for idx, element in enumerate(reversed(sys.argv[1:]))))
 

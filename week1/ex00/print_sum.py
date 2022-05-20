@@ -5,7 +5,11 @@ import sys
 try:
     if len(sys.argv) != 3:
         raise OSError("2 arguments required")
-    print(int(sys.argv[1]) + int(sys.argv[2]))
+    ret = float(sys.argv[1]) + float(sys.argv[2])
+    if ret.is_integer():
+        print(int(ret))
+    else:
+        print(ret)
 
 except Exception as e:
     print("Error: " + str(e))
