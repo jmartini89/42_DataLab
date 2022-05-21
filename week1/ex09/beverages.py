@@ -37,14 +37,8 @@ class Cappuccino(HotBeverage):
 
 if __name__ == "__main__":
 
-    BeverageCup = HotBeverage()
-    CoffeeCup = Coffee()
-    TeaCup = Tea()
-    ChocolateCup = Chocolate()
-    CappuccinoCup = Cappuccino()
-
-    print(BeverageCup)
-    print(CoffeeCup)
-    print(TeaCup)
-    print(ChocolateCup)
-    print(CappuccinoCup)
+    print(HotBeverage())
+    print(Coffee())
+    print(Tea())
+    print(Chocolate())
+    print(Cappuccino())

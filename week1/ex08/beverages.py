@@ -35,14 +35,10 @@ class Cappuccino(HotBeverage):
     def description(self) -> str:
         return super().description("Un po' di Italia nella sua tazza!")
 
-BeverageCup = HotBeverage()
-CoffeeCup = Coffee()
-TeaCup = Tea()
-ChocolateCup = Chocolate()
-CappuccinoCup = Cappuccino()
+if __name__ == "__main__":
 
-print(BeverageCup)
-print(CoffeeCup)
-print(TeaCup)
-print(ChocolateCup)
-print(CappuccinoCup)
+    print(HotBeverage())
+    print(Coffee())
+    print(Tea())
+    print(Chocolate())
+    print(Cappuccino())
